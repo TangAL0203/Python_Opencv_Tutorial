@@ -174,6 +174,12 @@ bbx_pre = [[84.172638 ,106.537832 ,162.237806 ,221.750309 ,0.998269],
 [82.578430 ,94.544200 ,157.661882 ,217.793059 ,0.022251],
 [87.191411 ,116.113244 ,117.224330 ,193.421508 ,0.02200]]
 
+# circle(img, center, radius, color[, thickness[, lineType[, shift]]]) -> None
+# thickness=-1：表示对封闭图像进行内部填满
+# img = cv2.imread('1.jpg')
+# cv2.circle(img, center=(0,0), radius=3, color=(0,0,255),thickness=-1)
+# cv2.imshow('hh.jpg', img)
+# cv2.waitKey(0)
 
 if __name__ == "__main__":
     
