@@ -91,6 +91,7 @@ def nms_show(img, bbx_pre, bbx_done, x1y1x2y2=True):
             pt1 = (int(max(bbx_pre[i][0]-bbx_pre[i][2]/2,0)), int(max(bbx_pre[i][1]-bbx_pre[i][3]/2,0)))
             pt2 = (int(min(bbx_pre[i][0]+bbx_pre[i][2]/2,W)), int(min(bbx_pre[i][1]+bbx_pre[i][3]/2,H)))
         img_pre = cv2.rectangle(img_pre, pt1, pt2, (0,255,0), thickness=1)
+        # for opencv2 , cv2.rectangle() will return None
 
     for i in range(len(bbx_done)):
         if x1y1x2y2:
